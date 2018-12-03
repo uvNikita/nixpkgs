@@ -12,7 +12,7 @@ perlPackages.buildPerlPackage rec {
   # perl packages by default get devdoc which isn't present
   outputs = [ "out" ];
 
-  buildInputs = with perlPackages; [ IOSocketSSL DigestSHA1 ];
+  buildInputs = with perlPackages; [ IOSocketSSL DigestSHA1 JSONAny ];
 
   patches = [ ./ddclient-line-buffer-stdout.patch ];
 
